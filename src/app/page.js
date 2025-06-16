@@ -1,85 +1,72 @@
 import React from "react";
+import Image from 'next/image'
 
 const PrivacyPolicy = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.heading}>Privacy Policy</h1>
+    <main style={styles.container}>
+      <div style={styles.content}>
+        <h1 style={styles.title}>Welcome to BuzzNet</h1>
 
-      <p style={styles.paragraph}>
-        This application (&quot;the App&quot;) is committed to protecting your privacy. This Privacy Policy explains
-        how we collect, use, and safeguard your information when you use our app and website.
-      </p>
+            <Image
+      src="/static/icon.png"
+      width={250}
+      height={250}
+      alt="Picture of the author"
+    />
 
-      <h2 style={styles.subheading}>1. Information We Collect</h2>
-      <p style={styles.paragraph}>
-        We may collect personal information such as your name, email address, and location to provide the core
-        features of the app, such as networking, job listings, and events in your area.
-      </p>
+        <p style={styles.description}>
+          BuzzNet is a networking platform built to connect like-minded professionals in your area.
+          We help build real-world connections through events and opportunities — powered by community and for free!
+        </p>
+        <p style={styles.subtext}>
+          Soon avaliable on Google and IOS
+        </p>
 
-      <h2 style={styles.subheading}>2. How We Use Your Information</h2>
-      <p style={styles.paragraph}>
-        Your information is used to help match you with local users and opportunities. We do not sell or share your
-        personal data with third parties.
-      </p>
-
-      <h2 style={styles.subheading}>3. Data Security</h2>
-      <p style={styles.paragraph}>
-        We take reasonable precautions to protect your data, including secure storage and encrypƒted connections. Your
-        personal data is stored securely in Firebase.
-      </p>
-
-      <h2 style={styles.subheading}>4. Third-Party Services</h2>
-      <p style={styles.paragraph}>
-        This App may integrate with services like Firebase and Google Sign-In. These services may collect data as
-        described in their own privacy policies.
-      </p>
-
-      <h2 style={styles.subheading}>5. Your Consent</h2>
-      <p style={styles.paragraph}>
-        By using the App, you consent to our Privacy Policy.
-      </p>
-
-      <h2 style={styles.subheading}>6. Contact Us</h2>
-      <p style={styles.paragraph}>
-        If you have any questions about this Privacy Policy, please contact us at support@example.com.
-      </p>
-
-      <p style={styles.footer}>Last updated: June 2025</p>
-    </div>
+      </div>
+    </main>
   );
 };
 
-const styles = {
-  container: {
-
-    margin: "0 auto",
-    padding: 20,
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    lineHeight: 1.6,
-    backgroundColor: "#f9f9f9",
-    color: "#333",
-    borderRadius: 8,
-  },
-  heading: {
-    fontSize: "2rem",
-    marginBottom: 20,
-    color: "#222",
-  },
-  subheading: {
-    fontSize: "1.3rem",
-    marginTop: 30,
-    marginBottom: 10,
-    color: "#444",
-  },
-  paragraph: {
-    fontSize: "1rem",
-    marginBottom: 16,
-  },
-  footer: {
-    marginTop: 40,
-    fontSize: "0.9rem",
-    color: "#888",
-  },
-};
-
+  const styles = {
+    container: {
+      minHeight: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "#f9f9f9", // Light background
+      padding: 20,
+      color: "#333", // Dark text
+      textAlign: "center",
+      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    },
+    content: {
+      maxWidth: 600,
+    },
+    title: {
+      fontSize: "2.5rem",
+      fontWeight: "bold",
+      color: "#FFD500", // Buzz yellow
+      marginBottom: "1rem",
+    },
+    description: {
+      fontSize: "1.2rem",
+      color: "#555",
+      marginBottom: "1.5rem",
+    },
+    subtext: {
+      fontSize: "1rem",
+      color: "#777",
+      marginBottom: "2rem",
+    },
+    button: {
+      display: "inline-block",
+      backgroundColor: "#FFD500",
+      color: "#000",
+      padding: "12px 24px",
+      borderRadius: 8,
+      fontWeight: "bold",
+      textDecoration: "none",
+      transition: "background-color 0.2s ease",
+    },
+  };
 export default PrivacyPolicy;
