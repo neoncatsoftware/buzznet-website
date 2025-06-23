@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
 
       <h2 style={styles.subheading}>6. Contact Us</h2>
       <p style={styles.paragraph}>
-        If you have any questions about this Privacy Policy, please contact us at neoncatsoftware@gmail.com.
+        If you have any questions about this Privacy Policy or wish to delete your account, please contact us at neoncatsoftware@gmail.com.
       </p>
 
       <p style={styles.footer}>Last updated: June 2025</p>
