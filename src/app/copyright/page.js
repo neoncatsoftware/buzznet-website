@@ -39,7 +39,7 @@ export default function CopyrightPolicy() {
               If you believe that your copyrighted work has been copied or used in a way that constitutes
               infringement, please notify us at:
             </p>
-            <p><strong>Email:</strong> your-email@example.com</p>
+            <p><strong>Email:</strong> neoncatsoftware@gmail.com</p>
             <p>
               Include the following details:
               <ul>
